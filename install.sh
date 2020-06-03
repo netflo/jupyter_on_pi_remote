@@ -1,10 +1,11 @@
 
-sudo apt-get install  supervisor virtualenv -y
+sudo apt-get install  supervisor virtualenv html5 -y
 
 virtualenv -p python3 ~/jupyter-env
 
 source ~/jupyter-env/bin/activate
 pip install jupyter
+pip install requests
 deactivate
 
 sudo vi ~/jupyter-notebook/run-jupyter-notebook.sh
